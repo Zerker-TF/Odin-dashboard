@@ -9,79 +9,100 @@
 <body>
     <div class="dashboard">
         <div class = "sidebar">
-            <div class="logo-text">
-                Dashboard
-            </div>
-            <div class="item-list">
-                <div class="icon-text">
-                  <img src="./img/home.svg" alt="Home Icon">Home
-                </div>
-                <div class="icon-text">
-                    <img src="./img/card-account-details-outline.svg" alt="Profile Icon">Profile
-                </div>
-                <div class="icon-text">
-                    <img src="./img/message.svg" alt="msg Icon">Messages
-                </div>
-                <div class="icon-text">
-                    <img src="./img/clock-time-four-outline.svg" alt="History Icon">History
-                </div>
-                <div class="icon-text">
-                    <img src="./img/note-multiple.svg" alt="Task Icon">Tasks
-                </div>
-                <div class="icon-text">
-                    <img src="./img/account-group.svg" alt="Comm Icon">Communities
-                </div>
 
+            <div class="main-nav">
+                <a href="" class="logo">
+                    <img src="./img/view-dashboard.svg" alt="Dashboard Logo">
+                    <h1>Dashboard</h1>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="./img/home.svg" alt="Home Icon" class="sidebar-btn-icon">
+                    <p>Home</p>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="./img/card-account-details-outline.svg" alt="Profile Icon" class="sidebar-btn-icon">
+                    <p>Profile</p>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="./img/message.svg" alt="Messages Icon" class="sidebar-btn-icon">
+                    <p>Messages</p>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="img/clock-time-four-outline.svg" alt="History Icon" class="sidebar-btn-icon">
+                    <p>History</p>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="./img/note-multiple.svg" alt="Task Icon" class="sidebar-btn-icon">
+                    <p>Tasks</p>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="./img/account-group.svg" alt="Community Icon" class="sidebar-btn-icon">
+                    <p>Communities</p>
+                </a>
             </div>
-            <div class="settings-list">
-                <div class="icon-text">
-                    <img src="./img/cog.svg">Settings
-                </div>
-                <div class="icon-text">
-                    <img src="./img/help-box.svg">Support
-                </div>
-                <div class="icon-text">
-                    <img src="./img/shield-account-variant.svg">Privacy
-                </div>
+
+            <div class="settings-nav">
+                <a href="" class="sidebar-btn">
+                    <img src="./img/cog.svg" alt="Settings Icon" class="sidebar-btn-icon">
+                    <p>Settings</p>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="./img/help-box.svg" alt="Support Icon" class="sidebar-btn-icon">
+                    <p>Support</p>
+                </a>
+                <a href="" class="sidebar-btn">
+                    <img src="./img/shield-account-variant.svg" alt="Privacy Icon" class="sidebar-btn-icon">
+                    <p>Privacy</p>
             </div>
+            
         </div>
 
         <div class="header">
-            <div class="search-bar">
-                search bar
+            <div class="search-section">
+                <label for="search-bar">
+                    <img src="./img/magnify.svg" alt="Search Icon" class="search-icon">
+                </label>
+                <input type="search" id="search-bar" placeholder="Search...">
             </div>
-            <div class="user-info">
-                info
+
+            <div class="profile">
+                <img src="./img/bell-outline.svg" alt="Notifications Icon" class="notification-icon">
+                <img src="./img/pfp.webp" alt="Profile Picture" class="profile-picture">
+                <p class="profile-name">Zerker</p>
+            </div>
+            <div class="greeting">
+                <div class="user-pfp">
+                    <img src="./img/pfp.webp" alt="Profile Picture" class="profile-picture">
+                </div>
+                <div class="user-greeting">
+                    <p id="greeting">Hi there,</p>
+                    <p id="user-profile">Zerker (@Zerker-TF)</p>
+                </div>
+            </div>
+
+            <div class="action-btn">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
         </div>
-        <div class="content">
+
+        <div class="main-dashboard">
             <div class="projects">
-                <div class="project">
-                    <h2>Project 1</h2>
-                    <p>Description of project 1.</p>
+                <h2>Projects</h2>
+                <div class="cards">
+                    <h3 class="card-title">Project 1</h3>
+                    <p>project description</p>
                 </div>
-                <div class="project">
-                    <h2>Project 2</h2>
-                    <p>Description of project 2.</p>
-                </div>
-                <div class="project">
-                    <h2>Project 3</h2>
-                    <p>Description of project 3.</p>
-                </div>
-                <div class="project">
-                    <h2>Project 4</h2>
-                    <p>Description of project 4.</p>
-                </div>
-                <div class="project">
-                    <h2>Project 5</h2>
-                    <p>Description of project 5.</p>
-                </div>
-                <div class="project">
-                    <h2>Project 6</h2>
-                    <p>Description of project 6.</p>
+                <div class="card-btn">
+                    <img src="./img/star-outline.svg">
+                    <img src="./img/eye-outline.svg">
+                    <img src="./img/share-variant-outline.svg">
                 </div>
             </div>
         </div>
+
+       
 
     </div>
 </body>
