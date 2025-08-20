@@ -4,59 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    
+   
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="dashboard">
-        <div class = "sidebar">
-
-            <div class="main-nav">
-                <a href="" class="logo">
-                    <img src="./img/view-dashboard.svg" alt="Dashboard Logo">
-                    <h1>Dashboard</h1>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="./img/home.svg" alt="Home Icon" class="sidebar-btn-icon">
-                    <p>Home</p>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="./img/card-account-details-outline.svg" alt="Profile Icon" class="sidebar-btn-icon">
-                    <p>Profile</p>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="./img/message.svg" alt="Messages Icon" class="sidebar-btn-icon">
-                    <p>Messages</p>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="img/clock-time-four-outline.svg" alt="History Icon" class="sidebar-btn-icon">
-                    <p>History</p>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="./img/note-multiple.svg" alt="Task Icon" class="sidebar-btn-icon">
-                    <p>Tasks</p>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="./img/account-group.svg" alt="Community Icon" class="sidebar-btn-icon">
-                    <p>Communities</p>
-                </a>
-            </div>
-
-            <div class="settings-nav">
-                <a href="" class="sidebar-btn">
-                    <img src="./img/cog.svg" alt="Settings Icon" class="sidebar-btn-icon">
-                    <p>Settings</p>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="./img/help-box.svg" alt="Support Icon" class="sidebar-btn-icon">
-                    <p>Support</p>
-                </a>
-                <a href="" class="sidebar-btn">
-                    <img src="./img/shield-account-variant.svg" alt="Privacy Icon" class="sidebar-btn-icon">
-                    <p>Privacy</p>
-                </a>
-            </div>
-            
-        </div>
 
         <div class="header">
             <div class="search-section">
@@ -88,67 +41,116 @@
             </div>
         </div>
 
+
+        <div class = "sidebar">
+
+            <div class="sidebar-group">
+                <img class="icon" src="./img/view-dashboard.svg" height="32">
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="sidebar-group">
+                <img class="icon" src="./img/home.svg" height="20">
+                <a href="">Home</a>
+
+                <img class="icon" src="./img/note-multiple.svg" height="20">
+                <a href="">Tasks</a>
+
+                <img class="icon" src="./img/clock-time-four-outline.svg" height="20">
+                <a href="">History</a>
+
+                <img class="icon" src="./img/message.svg" height="20">
+                <a href="">Messages</a>
+
+                <img class="icon" src="./img/card-account-details-outline.svg" height="20">
+                <a href="">Profile</a>
+            </div>
+
+            <div class="sidebar-group">
+                <img class="icon" src="./img/cog.svg" height="20">
+                <a href="">Settings</a>
+
+                <img class="icon" src="./img/help-box.svg" height="20">
+                <a href="">About</a>
+
+                <img class="icon" src="./img/shield-account-variant.svg" height="20">
+                <a href="">Privacy</a>
+            </div>
+
+            
+        </div>
+
+
+
         <div class="main-dashboard">
             <div class="projects">
                 <h2>Projects</h2>
                 <div class="cards">
-                    <h3 class="card-title">Project 1</h3>
-                    <p>project description</p>
-                </div>
-                <div class="card-btn">
-                    <img src="./img/star-outline.svg" alt="Star Icon">
-                    <img src="./img/eye-outline.svg" alt="View Icon">
-                    <img src="./img/share-variant-outline.svg" alt="Share Icon">
-                </div>
-
-                <div class="cards">
-                    <h3 class="card-title">Project 2</h3>
-                    <p>project description</p>
-                </div>
-                <div class="card-btn">
-                    <img src="./img/star-outline.svg" alt="Star Icon">
-                    <img src="./img/eye-outline.svg" alt="View Icon">
-                    <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    <h3 class="card-title">Recipes</h3>
+                    <p>This is a basic recipe website built with only HTML,
+                        to demostrate the fundamentals of page linking, list and image formatting</p>
+                    <div class="card-btn">
+                        <img src="./img/star-outline.svg" alt="Star Icon">
+                        <img src="./img/eye-outline.svg" alt="View Icon">
+                        <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    </div>
                 </div>
 
                 <div class="cards">
-                    <h3 class="card-title">Project 3</h3>
-                    <p>project description</p>
-                </div>
-                <div class="card-btn">
-                    <img src="./img/star-outline.svg" alt="Star Icon">
-                    <img src="./img/eye-outline.svg" alt="View Icon">
-                    <img src="./img/share-variant-outline.svg" alt="Share Icon">
-                </div>
-
-                <div class="cards">
-                    <h3 class="card-title">Project 4</h3>
-                    <p>project description</p>
-                </div>
-                <div class="card-btn">
-                    <img src="./img/star-outline.svg" alt="Star Icon">
-                    <img src="./img/eye-outline.svg" alt="View Icon">
-                    <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    <h3 class="card-title">Landing Page</h3>
+                    <p>Single page built on a provided mockup.
+                        Serves as a demostration of HTML and CSS with flexbox to make a responsive layout</p>
+                    </p>
+                    <div class="card-btn">
+                        <img src="./img/star-outline.svg" alt="Star Icon">
+                        <img src="./img/eye-outline.svg" alt="View Icon">
+                        <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    </div>
                 </div>
 
                 <div class="cards">
-                    <h3 class="card-title">Project 5</h3>
-                    <p>project description</p>
-                </div>
-                <div class="card-btn">
-                    <img src="./img/star-outline.svg" alt="Star Icon">
-                    <img src="./img/eye-outline.svg" alt="View Icon">
-                    <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    <h3 class="card-title">Rock Paper Scissors</h3>
+                    <p>Console based game with the logic built with JavaScript.
+                    This project focuses on solidifying core JS concepts like functions, conditionals,
+                    and logical problem-solving.
+                    </p>
+                    <div class="card-btn">
+                        <img src="./img/star-outline.svg" alt="Star Icon">
+                        <img src="./img/eye-outline.svg" alt="View Icon">
+                        <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    </div>
                 </div>
 
                 <div class="cards">
-                    <h3 class="card-title">Project 6</h3>
-                    <p>project description</p>
+                    <h3 class="card-title">Etch-a-Sketch</h3>
+                    <p>A web-based drawing tool built with HTML, CSS, and JavaScript.</p>
+                    <div class="card-btn">
+                        <img src="./img/star-outline.svg" alt="Star Icon">
+                        <img src="./img/eye-outline.svg" alt="View Icon">
+                        <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    </div>
                 </div>
-                <div class="card-btn">
-                    <img src="./img/star-outline.svg" alt="Star Icon">
-                    <img src="./img/eye-outline.svg" alt="View Icon">
-                    <img src="./img/share-variant-outline.svg" alt="Share Icon">
+
+                <div class="cards">
+                    <h3 class="card-title">Calculator</h3>
+                    <p>A fully functional calculator built with HTML, CSS, and JavaScript.</p>
+                    <div class="card-btn">
+                        <img src="./img/star-outline.svg" alt="Star Icon">
+                        <img src="./img/eye-outline.svg" alt="View Icon">
+                        <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <h3 class="card-title">Sign-up Form</h3>
+                    <p>A sign-up form built with HTML and CSS. This project focuses on creating a clean,
+                     visually appealing form using Flexbox for layout and HTML5 validation for
+                     user input</p>
+                    <div class="card-btn">
+                        <img src="./img/star-outline.svg" alt="Star Icon">
+                        <img src="./img/eye-outline.svg" alt="View Icon">
+                        <img src="./img/share-variant-outline.svg" alt="Share Icon">
+                    </div>
                 </div>
             </div>
 
