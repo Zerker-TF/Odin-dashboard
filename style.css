@@ -102,6 +102,7 @@
 }
 
 /* Sidebar Section */
+
 .sidebar{
     color:white;
     background-color: var(--borderblue);
@@ -129,14 +130,135 @@
     /* Layout of items with the icons next to them */
     display: grid;
     grid-template-columns: 52px max-content;
-    /* Prettying up & aligning things */
     align-items: center;
     padding-left: 8px;
 }
 
 .sidebar-group .icon {
-    /* Align the images to the center of the grid track */
     justify-self: center;
-    /* Change images from black to white */
     filter: invert(100%);
+}
+
+/* Main Section */
+
+.main-dashboard{
+    --minbox: 250px;
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: var(--secondarycolor);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    padding: 25px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+.projects{
+    min-width: 300px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+}
+
+.main-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--minbox), 300px));
+    gap:30px;
+}
+
+.cards{
+    position: relative;
+    /* sizing */
+    height: 152px;
+    min-width: var(--minbox);
+    max-width: 300px;
+    /* decorations */
+    background-color: var(--lightcolor);
+    box-shadow: var(--globalshadow);
+    border-radius: var(--boxradius);
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 28px;
+}
+
+.cards a{
+    color:black;
+    text-decoration: none;
+}
+.cards h3{
+    font-size: 1rem;
+}
+
+.cards p{
+    padding-top: 9px;
+    font-size: 0.9rem;
+}
+
+.card-btn{
+    align-self: flex-end;
+    display: flex;
+    gap: 16px;
+}
+
+.side-dashboard{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.announcement-list{
+     /* Decorations for the announcement box */
+    box-shadow: var(--globalshadow);
+    background-color: var(--lightcolor);
+    border-radius: var(--boxradius);
+    padding: 28px 32px;
+    /* setting up content within the announcements box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.announcement-list h3{
+    font-size: 0.8rem;
+}
+
+.announcement-list p{
+    padding-top: 0.3rem;
+    font-size: 0.7rem;
+    color:var(--terciarycolor)
+}
+
+.trending{
+    /* Decorations */
+    box-shadow: var(--globalshadow);
+    background-color: var(--lightcolor);
+    border-radius: var(--boxradius);
+    /* Arrangement */
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px 
+}
+
+.trend{
+     display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trend h3{
+    font-size: 0.8rem;
+}
+
+.trend p{
+    font-size: 0.75rem;
+    padding-top: 5px;
+    color: var(--terciarycolor);
+}
+
+.profile-picture{
+    border-radius: 35px;
 }
